@@ -11,5 +11,5 @@ def get_prediction(X):
 
 if __name__ == '__main__':
     model = Model_train()
-    print('true:', numpy.argmax(model.y_test[0]), '\n',
-          'pred:', get_prediction(model.x_test[0])['prediction'])
+    print('true:', numpy.argmax(model.y_test[0]),
+          '\npred:', get_prediction(model.x_test[0])['prediction'])
