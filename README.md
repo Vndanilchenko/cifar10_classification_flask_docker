@@ -35,6 +35,8 @@ Docker
     $ python3 main.py 
     или
     $ docker run -it -p 8080:80 -e FLASK_APP=main.py -e FLASK_DEBUG=1 YOUR_IMAGE_NAME flask run --host=0.0.0.0 --port=8080
+    также с подключением директории cls с весами модели как volume
+    docker run -it -p 8080:80 -v ~/cls:/app/cls/ --name CONTAINER_NAME YOUR_IMAGE_NAME
     
 </xml>
 
